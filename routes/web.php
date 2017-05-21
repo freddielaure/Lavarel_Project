@@ -35,3 +35,5 @@ Route::get('/insert', function () {
 });
 Route::get('datatable', ['uses'=>'loescheController@datatable']);
 Route::get('datatable/getposts', ['as'=>'datatable.getposts','uses'=>'loescheController@getPosts']);
+
+Route::resource('itemCRUD','ItemCRUDController');

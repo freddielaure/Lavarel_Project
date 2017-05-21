@@ -33,7 +33,7 @@
       <div class="card-block">
         <h3 class="card-title">Produkte löschen</h3>
         <p class="card-text">Produkte, welche ungewünscht sind, aus der Liste rausnehmen.</p>
-        <a href="loesche" class="btn btn-primary">Bestätigen</a>
+        <a href="itemCRUD" class="btn btn-primary">Bestätigen</a>
 
       </div>
     </div>
