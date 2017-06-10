@@ -33,6 +33,8 @@ Route::post('/insert', 'produkteController@insert');
 Route::get('/insert', function () {
     return view('welcome');
 });
+
+
 Route::get('datatable', ['uses'=>'loescheController@datatable']);
 Route::get('datatable/getposts', ['as'=>'datatable.getposts','uses'=>'loescheController@getPosts']);
 

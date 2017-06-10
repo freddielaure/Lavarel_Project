@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
           <p id="text">
             <marquee width="1000" height='250' direction="up">
-        Willkommen bei Delicious! Unseres Lagerverwaltungssystem.
+        Willkommen bei Delicious! Unser Lagerverwaltungssystem.
       </MARQUEE>
       </p>
 
@@ -46,6 +46,7 @@
         <h3 class="card-title">Kritische Bestände ansehen</h3>
         <p class="card-text">Sich angucken, welche Produkte bestellt werden müssen.</p>
         <a href="#" class="btn btn-primary">Bestätigen</a>
+      <!--<a href="test" class="btn btn-primary">Test</a>-->
       </div>
     </div>
   </div>
