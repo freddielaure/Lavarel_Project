@@ -26,7 +26,7 @@ protected $redirectTo = '/home';
          'RegalNr' => $data['RegalNr'],
 
      ]);
-     
+
       return redirect()->back()->with('message','Operation Successful !');
 
 

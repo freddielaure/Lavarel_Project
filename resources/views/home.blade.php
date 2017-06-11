@@ -31,7 +31,7 @@
     <div class="card card1">
       <div class="t-Card-icon u-color2"><span class="t-Icon fa fa-search-minus"><span class="t-Card-initials" role="presentation"></span></span></div>
       <div class="card-block">
-        <h3 class="card-title">Produkte löschen</h3>
+        <h3 class="card-title">Produkte bearbeiten</h3>
         <p class="card-text">Produkte, welche ungewünscht sind, aus der Liste rausnehmen.</p>
         <a href="itemCRUD" class="btn btn-primary">Bestätigen</a>
 
@@ -45,7 +45,7 @@
       <div class="card-block">
         <h3 class="card-title">Kritische Bestände ansehen</h3>
         <p class="card-text">Sich angucken, welche Produkte bestellt werden müssen.</p>
-        <a href="#" class="btn btn-primary">Bestätigen</a>
+        <a href="itemCRUD" class="btn btn-primary">Bestätigen</a>
       <!--<a href="test" class="btn btn-primary">Test</a>-->
       </div>
     </div>

@@ -41,11 +41,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', '46.38.237.100'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'LARAVEL'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'admin'),
+            'database' => env('DB_DATABASE', 'Ludwigsql5'),
+            'username' => env('DB_USERNAME', 'Ludwigsql5'),
+            'password' => env('DB_PASSWORD', 'MdoFznljag'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

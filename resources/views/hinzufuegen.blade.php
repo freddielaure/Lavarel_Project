@@ -30,19 +30,19 @@
   </div>
 
 
-  <label class="col-sm-1" for="Kategorie">Kategorie:</label>
+  <label class="col-sm-1" for="Kategorie"> Lagerungsart:</label>
   <div class="col-sm-5">
          {{ Form::select('Kategorie', [
-    '1' => 'Tomaten',
-    '2' => 'Potatoes',
-    '3' => 'Orange',
-    '4' => 'Paprika']
+    '1' => 'Weinlagerung',
+    '2' => 'Tiefkühlkost',
+    '3' => 'beispeil',
+    '4' => 'beispeil']
   ) }}
 </div>
 
   </div>
 
-
+<!--
   <div class="form-group">
     <label class="col-sm-1" for="Typ">Typ:</label>
 
@@ -62,6 +62,23 @@
   <input type="text" class="form-control" name="Preis"  value="{{ old('Preis') }}" id="Preis" placeholder="Preis ">
 </div>
 </div>
+-->
+
+
+<div class="form-group">
+  <div class="col-sm-3">
+  <label>Lagerort ID:</label>
+
+  <input type="text" class="form-control" name="Lagerort_id"  value="{{ old('Lagerort_id') }}" id="lagId" placeholder="Lagerort ID"></div>
+
+  <div class="col-sm-3">
+  <label>Mindestbestand:</label>
+
+  <input type="text" class="form-control"  name="Mindestbestand"  value="{{ old('Mindestbestand') }}" id="minb" placeholder="Mindestbestand">
+</div>
+</div>
+
+
 
 <div class="form-group">
   <div class="col-sm-6">
@@ -72,40 +89,23 @@
 </div>
 
 
-
-<div class="form-group">
-  <div class="col-sm-3">
-  <label>Regal Nr:</label>
-
-  <input type="text" class="form-control" name="RegalNr"  value="{{ old('RegalNr') }}" id="reg" placeholder="Regal Nr"></div>
-
-  <div class="col-sm-3">
-  <label>Minimal Wert:</label>
-
-  <input type="text" class="form-control"  name="MinimalWert"  value="{{ old('MinimalWert') }}" id="minw" placeholder="Minimal Wert">
-</div>
-</div>
-
-
-
-
-<div class="form-group">
+<!--<<div class="form-group">
    <div class="col-sm-3">
    <label>Bestandswert:</label>
 
       <input type="text" class="form-control"  name="Bestandswert"  value="{{ old('Bestandswert') }}" id="Bestand" placeholder="Bestandswert">
    </div>
 
-    <div class="col-sm-3">
+    div class="col-sm-3">
    <label >Bestelltswert:</label>
 
       <input type="text" class="form-control" name="Bestelltswert"  value="{{ old('Bestelltswert') }}" id="Bestell" placeholder="Bestelltswert">
    </div>
 </div>
+-->
 
 
-
-<div class="form-group">
+<!--<div class="form-group">
    <div class = "col-sm-3">
 
    <label>Lieferant:</label>
@@ -118,13 +118,13 @@
       <input type="text" class="form-control" name="LieferantAdresse" value="{{ old('LieferantAdresse') }}" id="lief" placeholder="Lieferant Adresse">
    </div>
 </div>
-
+-->
 
 
 
   <div class="col-md-0">
       <button type="submit" class="btn btn-primary">
-          <span class="t-Icon fa fa-edit"></span> Produkte eingeben
+          <span class="t-Icon fa fa-edit"></span> Produkt eingeben
       </button>
   </div>
 
