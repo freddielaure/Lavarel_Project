@@ -25,33 +25,21 @@
     <table class="table table-bordered">
         <tr class="bach">
           <th>Nr</th>
-          <th>Produktname</th>
-           <th>Kategorie</th>
-           <th>Typ</th>
-           <th>Beschreibung</th>
-           <th>Lieferant</th>
-           <th>RegalNr</th>
-           <th>Bestandswert</th>
-           <th>Bestelltswert</th>
-           <th>LieferantAdresse</th>
+          <th>Name</th>
+           <th>Mindestbestand</th>
+           <th>Lagerarten_id</th>
            <!-- Button-->
             <th width="280px">Action</th>
             <th width="280px">Action</th>
             <th width="280px">Action</th>
 
         </tr>
-   @foreach ($Products as $key => $item)
+   @foreach ($Produkte as $key => $item)
     <tr class="hoverable">
         <td>{{ ++$i }}</td>  <!-- incremente a chaque le numero-->
-        <td>{{ $item->Produktname }}</td>
-        <td>{{ $item->Kategorie}}</td>
-        <td>{{ $item->Typ }}</td>
-        <td>{{ $item->Beschreibung }}</td>
-        <td>{{ $item->Lieferant }}</td>
-        <td>{{ $item->RegalNr }}</td>
-        <td>{{ $item->Bestandswert }}</td>
-        <td>{{ $item->Bestelltswert }}</td>
-        <td>{{ $item->LieferantAdresse }}</td>
+        <td>{{ $item->name }}</td>
+        <td>{{ $item->mindestbestand}}</td>
+        <td>{{ $item->lagerarten_id }}</td>
           <td>
             <a class="btn btn-info" href="{{ route('itemCRUD.show',$item->id) }}">Show</a>
          </td>
