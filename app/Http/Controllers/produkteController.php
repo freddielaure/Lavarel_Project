@@ -11,7 +11,7 @@ protected $redirectTo = '/home';
 
   protected function insert(Request $request)
  {
-   $data = $request->all();
+   $data = $request->all();s
       Products::create([
 
          'Produktname' => $data['Produktname'],
