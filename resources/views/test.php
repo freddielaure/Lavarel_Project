@@ -9,7 +9,7 @@
        $bb=Session::get('message');
        if ($bb!= null){
 
-       echo "<Pierre> $bb </Pierre>";s
+       echo "<Pierre> $bb </Pierre>";
      }
      ?>
      </div>
