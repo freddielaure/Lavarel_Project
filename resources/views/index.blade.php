@@ -61,7 +61,7 @@
     @endforeach
     </table>
 
-    {!! $Products->render() !!}
+    {!! $Produkte->render() !!}
 
   </div>
 

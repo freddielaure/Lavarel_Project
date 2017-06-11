@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Produkte;
+use App\produkte;
 
 class ItemCRUDController extends Controller
 {
@@ -15,7 +15,7 @@ class ItemCRUDController extends Controller
     */
    public function index(Request $request)
    {
-       $Produkte = Produkte::orderBy('produkte_id','DESC')->paginate(7);
+       $Produkte = produkte::orderBy('produkte_id','DESC')->paginate(7);
        return view('index',compact('Produkte'))
            ->with('i', ($request->input('page', 1) - 1) * 5);
    }
