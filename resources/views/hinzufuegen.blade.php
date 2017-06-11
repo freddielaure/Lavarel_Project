@@ -24,9 +24,9 @@
       <form class="form-horizontal" role="form" method="POST" action="/insert">
         {{ csrf_field() }}
   <div class="form-group">
-    <label class="col-sm-1" for="Produktname">Produktname:</label>
+    <label class="col-sm-1" for="Produktname">Name:</label>
     <div class="col-sm-5">
-    <input type="text" class="form-control" name="Produktname"  value="{{ old('Produktname') }}" id="Produktname" placeholder="Produktname">
+    <input type="text" class="form-control" name="Name"  value="{{ old('name') }}" id="name" placeholder="Name">
   </div>
 
 
@@ -69,7 +69,7 @@
   <div class="col-sm-3">
   <label>Lagerort ID:</label>
 
-  <input type="text" class="form-control" name="Lagerort_id"  value="{{ old('Lagerort_id') }}" id="lagId" placeholder="Lagerort ID"></div>
+  <input type="text" class="form-control" name="lagerarten_id"  value="{{ old('Lagerort_id') }}" id="lagId" placeholder="Lagerort ID"></div>
 
   <div class="col-sm-3">
   <label>Mindestbestand:</label>

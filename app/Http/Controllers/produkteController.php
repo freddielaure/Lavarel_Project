@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Products;
+use App\Produkte;
 
 class produkteController  extends Controller
 {
@@ -12,18 +12,11 @@ protected $redirectTo = '/home';
   protected function insert(Request $request)
  {
    $data = $request->all();
-      Products::create([
+      Produkte::create([
 
-         'Produktname' => $data['Produktname'],
-         'Typ' => $data['Typ'],
-         'Kategorie' => $data['Kategorie'],
-         'Preis' => $data['Preis'],
-         'LieferantAdresse' => $data['LieferantAdresse'],
-         'Lieferant' => $data['Lieferant'],
-         'Beschreibung' => $data['Beschreibung'],
-         'Bestelltswert' => $data['Bestelltswert'],
-         'Bestandswert' => $data['Bestandswert'],
-         'RegalNr' => $data['RegalNr'],
+         'name' => $data['name'],
+         'mindestbestand' => $data['mindestbestand'],
+         'lagerarten_id' => $data['lagerarten_id'],
 
      ]);
 
