@@ -39,7 +39,7 @@
 
 <div class="container">
     <div class="row">
-        <h3>Developer Question</h3>
+        <h3>Show Products</h3>
         <p>Ich überlege mir noch, was ich hier schreiben soll. Dies ist nur ein Blablablablablablablab!</p>
         <hr/>
 
