@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class produkte extends Model
+class produkten extends Model
 {
 
 
