@@ -40,7 +40,7 @@
 <div class="container">
     <div class="row">
         <h3>Developer Question</h3>
-        <p>Can anyone tell me why this snippet flashes after the tooltip is removed from the DOM? It is driving me crazy!</p>
+        <p>Ich überlege mir noco, was ich hier schreiben soll. Dies ist nur ein Blablablablablablablab!</p>
         <hr/>
 
     </div>
