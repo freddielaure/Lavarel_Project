@@ -40,7 +40,7 @@
 <div class="container">
     <div class="row">
         <h3>Developer Question</h3>
-        <p>Ich überlege mir noco, was ich hier schreiben soll. Dies ist nur ein Blablablablablablablab!</p>
+        <p>Ich überlege mir noch, was ich hier schreiben soll. Dies ist nur ein Blablablablablablablab!</p>
         <hr/>
 
     </div>
