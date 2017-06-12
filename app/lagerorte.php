@@ -14,6 +14,7 @@ class lagerorte extends Model
      *
      * @var array
      */
+     protected $table = 'lagerorte';
     protected $fillable = [
         'lagerorte_id', 'name', 'strasse_hnr',   'plz','Lagerort_name'
     ];
