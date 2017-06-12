@@ -39,7 +39,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                         Delicious
+                        {{ config('app.name', 'Delicious') }}
                     </a>
                 </div>
 
