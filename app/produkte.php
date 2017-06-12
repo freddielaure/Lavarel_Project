@@ -15,6 +15,7 @@ class produkte extends Model
      * @var array
      */
     protected $table = 'produkte';
+    protected $primaryKey = 'produkte_id';
     protected $fillable = [
         'produkte_id', 'name', 'lagerarten_id',   'mindestbestand'
     ];

@@ -17,7 +17,8 @@ class ItemCRUDController extends Controller
     */
    public function index(Request $request)
    {
-       $Produkte = produkte::orderBy('produkte_id','DESC')->paginate(7);
+
+       $Produkte = produkte::orderBy('produkte_id','DESC')->paginate(7);  //Hier gebe ich wieviel Zeile ich pro Seite zeigen möchte
        return view('index',compact('Produkte'))
            ->with('i', ($request->input('page', 1) - 1) * 5);
    }
@@ -63,9 +64,9 @@ class ItemCRUDController extends Controller
     * @param  int  $id
     * @return \Illuminate\Http\Response
     */
-   public function show($id)
+   public function show($produkte_id)
    {
-       $item = Products::find($id);
+       $item = produkte::find($produkte_id);
        return view('show',compact('item'));
    }
 
@@ -75,9 +76,9 @@ class ItemCRUDController extends Controller
     * @param  int  $id
     * @return \Illuminate\Http\Response
     */
-   public function edit($id)
+   public function edit($produkte_id)
    {
-       $item = Products::find($id);
+       $item = produkte::find($produkte_id);
        return view('edit',compact('item'));
    }
 
@@ -88,7 +89,7 @@ class ItemCRUDController extends Controller
     * @param  int  $id
     * @return \Illuminate\Http\Response
     */
-   public function update(Request $request, $id)
+   public function update(Request $request, $produkte_id)
    {
        $this->validate($request, [
          'name' => 'bail|required|unique:Products|max:255',
@@ -101,7 +102,7 @@ class ItemCRUDController extends Controller
          'beschreibung' => '|required|min:20|max:1000',
        ]);
 
-       Products::find($id)->update($request->all());
+       produkte::find($produkte_id)->update($request->all());
        return redirect()->route('itemCRUD.index')
                        ->with('success','Item updated successfully');
    }
@@ -112,9 +113,9 @@ class ItemCRUDController extends Controller
     * @param  int  $id
     * @return \Illuminate\Http\Response
     */
-   public function destroy($id)
+   public function destroy($produkte_id)
    {
-       Products::find($id)->delete();
+       produkte::find($produkte_id)->delete();
        return redirect()->route('itemCRUD.index')
                        ->with('success','Item deleted successfully');
    }

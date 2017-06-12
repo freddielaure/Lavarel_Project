@@ -1,11 +1,6 @@
 @include('layouts.app')
 @section('content')
 @endsection
-
-
-
-
-
 <div class="container df">
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -42,19 +37,17 @@
         <td>{{ $item->mindestbestand}}</td>
         <td>{{ $item->lagerarten_id }}</td>
           <td>
-            <a class="btn btn-info" href="{{ route('itemCRUD.show',$item->id) }}">Show</a>
+            <a class="btn btn-info" href="{{ route('itemCRUD.show',$item->produkte_id) }}">Show</a>
          </td>
 
-
-
                   <td>
-                    <a class="btn btn-primary" href="{{ route('itemCRUD.edit',$item->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('itemCRUD.edit',$item->produkte_id) }}">Edit</a>
                   </td>
 
 
 
                 <td>
-                    {!! Form::open(['method' => 'DELETE','route' => ['itemCRUD.destroy', $item->id],'style'=>'display:inline']) !!}
+                    {!! Form::open(['method' => 'DELETE','route' => ['itemCRUD.destroy', $item->produkte_id],'style'=>'display:inline']) !!}
                             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                             {!! Form::close() !!}
               </td>
