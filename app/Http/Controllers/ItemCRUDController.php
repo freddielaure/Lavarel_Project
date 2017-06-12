@@ -17,7 +17,7 @@ class ItemCRUDController extends Controller
     */
    public function index(Request $request)
    {
-       $Produkte = produkte::orderBy('produkte_id','DESC')->paginate(7);
+       $P = produkte::orderBy('produkte_id','DESC')->paginate(7);
        return view('index',compact('Produkte'))
            ->with('i', ($request->input('page', 1) - 1) * 5);
    }

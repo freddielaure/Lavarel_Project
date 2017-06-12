@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+      //Laravel Tabelle Migration (Schema
       Schema::create('users', function (Blueprint $table) {
           $table->increments('id');
           $table->string('name');
