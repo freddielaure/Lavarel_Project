@@ -35,7 +35,7 @@
 
         </tr>
          <!-- -->
-   @foreach ($Produkten as $key => $item)
+   @foreach ($Produkte as $key => $item)
     <tr class="hoverable">
         <td>{{ ++$i }}</td>  <!-- incremente a chaque le numero-->
         <td>{{ $item->name }}</td>
@@ -62,7 +62,7 @@
     @endforeach
     </table>
 
-    {!! $Produkten->render() !!}
+    {!! $Produkte->render() !!}
 
   </div>
 
