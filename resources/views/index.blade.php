@@ -47,7 +47,7 @@
 
 
 
-                  <td>s
+                  <td>
                     <a class="btn btn-primary" href="{{ route('itemCRUD.edit',$item->id) }}">Edit</a>
                   </td>
 
