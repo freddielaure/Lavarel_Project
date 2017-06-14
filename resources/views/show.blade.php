@@ -39,8 +39,8 @@
 
 <div class="container">
     <div class="row">
-        <h3>Show Products</h3>
-        <p>Ich überlege mir noch, was ich hier schreiben soll. Dies ist nur ein Blablablablablablablab!</p>
+        <h3>Überblick auf alle Produkte</h3>
+        <p>Hier können Sie einen Überblick von einem Produkt haben</p>
         <hr/>
 
     </div>
