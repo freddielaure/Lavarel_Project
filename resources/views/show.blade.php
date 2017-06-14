@@ -60,18 +60,18 @@
     </div>
 
     <div class="container">
-
+      @foreach ($item as $object)
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>name:</strong>
-                {{ $item->name }}
+                {{ $object->name }}
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Mindestbestand:</strong>
-                {{ $item->mindestbestand}}
+                {{ $object->mindestbestand}}
             </div>
         </div>
 
@@ -79,16 +79,16 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Lagerarten_id:</strong>
-                {{ $item->lagerarten_id}}
+                {{ $object->lagerarten_id}}
             </div>
         </div>
 
 
 
     </div>
+@endforeach
 
 
-  
 
 
 
