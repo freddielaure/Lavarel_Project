@@ -39,4 +39,4 @@ Route::get('datatable', ['uses'=>'loescheController@datatable']);
 Route::get('datatable/getposts', ['as'=>'datatable.getposts','uses'=>'loescheController@getPosts']);
 
 Route::resource('itemCRUD','ItemCRUDController');
-Route::resource('users','usersController@users');
+Route::get('users','usersController@users');
