@@ -48,9 +48,7 @@
 
 
                 <td>
-                    {!! Form::open(['method' => 'DELETE','route' => [],'style'=>'display:inline']) !!}
-                            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                            {!! Form::close() !!}
+                    <a class="btn btn-danger" href="">Delete</a>
               </td>
     </tr>
     @endforeach
