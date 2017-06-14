@@ -88,6 +88,33 @@
     </div>
 
 
+    <div class="container">
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>name:</strong>
+                {{ $item1->Lagerort_name }}
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Mindestbestand:</strong>
+                {{ $item1->strasse_hnr}}
+            </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Lagerarten_id:</strong>
+                {{ $item1->plz}}
+            </div>
+        </div>
+
+
+
+    </div>
 
 
 
