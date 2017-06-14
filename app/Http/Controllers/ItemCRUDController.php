@@ -72,7 +72,7 @@ class ItemCRUDController extends Controller
     */
    public function show($produkte_id)
    {
-       $item = produkte::find($produkte_id)->join('lagerorte', 'lagerorte.lagerorte_id', '=', 'produkte.produkte_id');
+       $item = produkte::find($produkte_id);
        return view('show',compact('item'));
    }
 
