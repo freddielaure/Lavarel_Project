@@ -17,7 +17,7 @@ class lagerorte extends Model
      protected $table = 'lagerorte';
        protected $primaryKey = 'lagerorte_id';
     protected $fillable = [
-        'lagerorte_id', 'name', 'strasse_hnr',   'plz','Lagerort_name'
+        'lagerorte_id', 'name', 'strasse_hnr',   'plz','lagerort_name'
     ];
 
     /**

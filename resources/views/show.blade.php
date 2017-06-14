@@ -93,7 +93,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>name:</strong>
-                {{ $item1->Lagerort_name }}
+                {{ $item1->lagerort_name }}
             </div>
         </div>
 
