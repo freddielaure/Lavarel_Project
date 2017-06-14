@@ -61,7 +61,7 @@
 <div class="row">
   <div class="col-sm-4">
     <div class="card card1">
-    <div class="t-Card-icon u-color1"><span class="t-Icon fa fa-search-plus"><span class="t-Card-initials" role="presentation"></span></span></div>
+    <div class="t-Card-icon u-color1"><span class="t-Icon fa fa-user"><span class="t-Card-initials" role="presentation"></span></span></div>
       <div class="card-block">
         <h3 class="card-title">Benutzerverwaltung</h3>
         <p class="card-text">Hier können Sie die Benutzer verwalten</p>
