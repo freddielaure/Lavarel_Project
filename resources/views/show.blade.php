@@ -94,6 +94,44 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
+                <h2 style="color:blue;"> Bestände</h2>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+      @foreach ($item1 as $object1)
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>menge:</strong>
+                {{ $object1->menge }}
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>mengeneinheiten_id:</strong>
+                {{ $object1->mengeneinheiten_id}}
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+@endforeach
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
                 <h2 style="color:red;"> Lagerort</h2>
             </div>
         </div>
