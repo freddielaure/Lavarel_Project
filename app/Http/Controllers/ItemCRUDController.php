@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\produkte;
 use App\lagerorte;
+use App\bestaende;
+
 
 
 class ItemCRUDController extends Controller
@@ -74,8 +76,9 @@ class ItemCRUDController extends Controller
    public function show($produkte_id)
    {
        $item = DB::table('produkte')->join('lagerorte', 'lagerorte.lagerorte_id', '=', 'produkte.lagerarten_id')->where('produkte.produkte_id', '=', $produkte_id)->get();
+        $item1 = DB::table('produkte')->join('bestaende', 'bestaende.produkte_id', '=', 'produkte.produkte_id')->where('produkte.produkte_id', '=', $produkte_id)->get();
       //$item = produkte::with('lagerorte')->get();
-       return view('show',compact('item'));
+       return view('show',compact('item','item1'));
    }
 
    /**
