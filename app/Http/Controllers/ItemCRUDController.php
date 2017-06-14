@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use App\produkte;
 use App\lagerorte;
 
@@ -72,7 +73,7 @@ class ItemCRUDController extends Controller
     */
    public function show($produkte_id)
    {
-       $item = produkte::find($produkte_id)->join('lagerorte', 'lagerorte.lagerorte_id', '=', 'produkte.produkte_id')->get();
+       $item = DB::table('produkte')->join('lagerorte', 'lagerorte.lagerorte_id', '=', 'produkte.produkte_id')->get();
       //$item = produkte::with('lagerorte')->get();
        return view('show',compact('item'));
    }
