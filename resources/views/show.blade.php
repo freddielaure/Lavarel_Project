@@ -90,20 +90,28 @@
 
 
 
-
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2> Lagerort</h2>
+            </div>
+        </div>
+    </div>
+    </div>
 
 <div class="container">
   @foreach ($item as $object)
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>name:</strong>
+            <strong>Lagerort Name:</strong>
             {{ $object->Lagerort_name }}
         </div>
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>Mindestbestand:</strong>
+            <strong>Strasse:</strong>
             {{ $object->strasse_hnr}}
         </div>
     </div>
@@ -111,7 +119,7 @@
 
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>Lagerarten_id:</strong>
+            <strong>PLZ:</strong>
             {{ $object->plz}}
         </div>
     </div>
