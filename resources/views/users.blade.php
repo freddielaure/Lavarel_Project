@@ -5,7 +5,7 @@
 
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Hier können Produkte bearbeitet werden</h2>
+                <h2>Benutzerverwaltung</h2>
         </div>
 
 
