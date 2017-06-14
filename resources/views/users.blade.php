@@ -22,8 +22,10 @@
         <tr class="bach">
           <th>Nr</th>
           <th>Name</th>
-           <th>Mindestbestand</th>
-           <th>Lagerarten_id</th>
+           <th>lastname</th>
+           <th>email</th>
+           <th>Erstellen am</th>
+           <th>Bearbeiten am</th>
            <!-- Button-->
             <th width="280px">Action</th>
             <th width="280px">Action</th>
@@ -37,6 +39,8 @@
         <td>{{ $item->name }}</td>
         <td>{{ $item->lastname}}</td>
         <td>{{ $item->email }}</td>
+        <td>{{ $item->created_at}}</td>
+        <td>{{ $item->updated_at }}</td>
           <td>
             <a class="btn btn-info" href="">Show</a>
          </td>
