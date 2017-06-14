@@ -48,7 +48,7 @@
 
 
                 <td>
-                    {!! Form::open(['method' => 'DELETE','route' => ['itemCRUD.destroy', $item->produkte_id],'style'=>'display:inline']) !!}
+                    {!! Form::open(['method' => 'DELETE','route' => [],'style'=>'display:inline']) !!}
                             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                             {!! Form::close() !!}
               </td>
