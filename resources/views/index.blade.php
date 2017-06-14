@@ -76,10 +76,7 @@
    text-align: center;
 }
 
-.df {
-   padding: 20px 15px 0 !important;
 
-}
 
 th ,tr{
    text-align: center;
@@ -91,7 +88,8 @@ th ,tr{
 
    }
    .df{
-     margin: 80px;
+     margin-top: 100px;
+	  margin-bottom: 30px;
    }
    .footer{
      background: #337ab7 !important;
