@@ -31,18 +31,18 @@
 
         </tr>
          <!-- -->
-   @foreach ($users as $key => $item)
+   @foreach ($User as $key => $item)
     <tr class="hoverable">
         <td>{{ ++$i }}</td>  <!-- incremente a chaque le numero-->
         <td>{{ $item->name }}</td>
-        <td>{{ $item->mindestbestand}}</td>
-        <td>{{ $item->lagerarten_id }}</td>
+        <td>{{ $item->lastname}}</td>
+        <td>{{ $item->email }}</td>
           <td>
-            <a class="btn btn-info" href="{{ route('itemCRUD.show',$item->produkte_id) }}">Show</a>
+            <a class="btn btn-info" href="">Show</a>
          </td>
 
                   <td>
-                    <a class="btn btn-primary" href="{{ route('itemCRUD.edit',$item->produkte_id) }}">Edit</a>
+                    <a class="btn btn-primary" href="">Edit</a>
                   </td>
 
 
@@ -56,7 +56,7 @@
     @endforeach
     </table>
 
-    {!! $users->render() !!}
+    {!! $User->render() !!}
 
   </div>
 

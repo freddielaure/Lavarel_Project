@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\test;
+use App\User;
 
 class usersController  extends Controller
 {
@@ -24,8 +24,8 @@ class usersController  extends Controller
        */
 
       public function index(Request $request){
-        $users = users::orderBy('id','DESC')->paginate(7);  //Hier gebe ich wieviel Zeile ich pro Seite zeigen möchte
-        return view('users',compact('users'))
+        $User = User::orderBy('id','DESC')->paginate(7);  //Hier gebe ich wieviel Zeile ich pro Seite zeigen möchte
+        return view('User',compact('User'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
       }
 
