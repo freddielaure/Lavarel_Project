@@ -25,7 +25,7 @@ class usersController  extends Controller
 
       public function index(Request $request){
         $User = User::orderBy('id','DESC')->paginate(7);  //Hier gebe ich wieviel Zeile ich pro Seite zeigen möchte
-        return view('User',compact('User'))
+        return view('users',compact('User'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
       }
 
