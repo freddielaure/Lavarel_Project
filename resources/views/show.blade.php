@@ -189,6 +189,9 @@
        color: rgb(255, 255, 255);
        text-align: center;
     }
+    body{
+      height:1200px !important;
+    }
 
     .df {
        padding: 20px 15px 0 !important;
