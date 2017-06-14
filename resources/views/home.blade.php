@@ -65,7 +65,7 @@
       <div class="card-block">
         <h3 class="card-title">Benutzerverwaltung</h3>
         <p class="card-text">Hier können Sie die Benutzer verwalten</p>
-        <a href="hinzufuegen" class="btn btn-primary">ansehen</a>
+        <a href="users" class="btn btn-primary">ansehen</a>
       </div>
     </div>
   </div>
