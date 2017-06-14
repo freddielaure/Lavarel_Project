@@ -50,7 +50,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Produkt</h2>
+                <h2 style="color:blue;"> Produkt</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('itemCRUD.index') }}"> Back</a>
@@ -94,7 +94,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Lagerort</h2>
+                <h2 style="color:red;"> Lagerort</h2>
             </div>
         </div>
     </div>
