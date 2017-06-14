@@ -2,15 +2,15 @@
 @section('content')
 @endsection
 <div class="container df">
-    <div class="row">
+   
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Produkte bearbeiten</h2>
-            </div>
-
+                <h2>Hier können Produkte bearbeitet werden</h2>
         </div>
+
+      
     </div>
-	 </div>
+ </div>
 
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
