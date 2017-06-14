@@ -22,7 +22,7 @@ class usersController  extends Controller
        * @return \Illuminate\Http\Response
        */
 
-      public function users(){
+      public function index(){
       return view('users');
       }
 
