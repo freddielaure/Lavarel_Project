@@ -2,13 +2,13 @@
 @section('content')
 @endsection
 <div class="container df">
-   
+
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
                 <h2>Hier können Produkte bearbeitet werden</h2>
         </div>
 
-      
+
     </div>
  </div>
 
@@ -99,5 +99,11 @@ th ,tr{
 }
 .navbar-nav{
   margin-left: 300px !important;
+}
+
+
+.footer .nav>li>a:focus, .footer .nav>li>a:hover {
+    text-decoration: none;
+    background-color: rgba(0,0,0,.075);
 }
 </style>
