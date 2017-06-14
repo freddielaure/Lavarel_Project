@@ -50,7 +50,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2 style="color:blue;"> Produkt</h2>
+                <h2 style="color:#20bd60;"> Produkt</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('itemCRUD.index') }}"> Back</a>
@@ -218,6 +218,11 @@
     }
     .navbar-nav{
       margin-left: 300px !important;
+    }
+
+    .footer .nav>li>a:focus, .footer .nav>li>a:hover {
+        text-decoration: none;
+        background-color: rgba(0,0,0,.075);
     }
     </style>
 
