@@ -27,9 +27,9 @@
            <th>Erstellen am</th>
            <th>Bearbeiten am</th>
            <!-- Button-->
-            <th width="280px">Action</th>
-            <th width="280px">Action</th>
-            <th width="280px">Action</th>
+            <th width="100px">Action</th>
+            <th width="100px">Action</th>
+            <th width="100px">Action</th>
 
         </tr>
          <!-- -->
