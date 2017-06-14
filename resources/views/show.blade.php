@@ -92,6 +92,42 @@
 
 
 
+<div class="container">
+  @foreach ($item as $object)
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>name:</strong>
+            {{ $object->lagerort_name }}
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Mindestbestand:</strong>
+            {{ $object->strasse_hnr}}
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Lagerarten_id:</strong>
+            {{ $object->plz}}
+        </div>
+    </div>
+
+
+
+</div>
+@endforeach
+
+
+
+
+
+
+
+
 
 </body>
 
