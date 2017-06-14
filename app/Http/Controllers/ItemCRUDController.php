@@ -10,6 +10,12 @@ use App\lagerorte;
 class ItemCRUDController extends Controller
 {
 
+
+  public function __construct()        //Pour voir la page HOME il faut s'authentifier
+  {
+      $this->middleware('auth');
+  }
+
    /**
     * Display a listing of the resource.
     *
